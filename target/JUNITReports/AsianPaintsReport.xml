@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="98.966" tests="6" skipped="0" failures="1" errors="0">
+<testcase classname="To test AsianPaints functionality" name="To view different types of room designs" time="17.962">
+<system-out><![CDATA[
+Given User is on homepage of Asian Paints and hover on Inspiration..........passed
+When Click on Gallery option................................................passed
+And Click on Exterior designs...............................................passed
+And Select Room and its Category............................................passed
+Then It should display the room designs.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test AsianPaints functionality" name="To test Appoinment booking functionality for valid credentials - Example #1.1" time="18.251">
+<system-out><![CDATA[
+Given User is on homepage of Asian Paints and hover on Inspiration..........passed
+When Click on Where The Heart Is option.....................................passed
+And User enters the "Vaidehii", "9307870789", "442302" and vaidehi62@gmail.com.passed
+And Click on Book an appoinment.............................................passed
+Then It should schedule a visit by an expert................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test AsianPaints functionality" name="To test Appoinment booking functionality for invalid credentials" time="12.295">
+<system-out><![CDATA[
+Given User is on homepage of Asian Paints and hover on Inspiration..........passed
+When Click on Where The Heart Is............................................passed
+And User enters their details with Name1, MobileNumber1, PINCode1...........passed
+And Enters invalid Email1 for book an appoinment............................passed
+And Click on Book an appoinment button......................................passed
+Then It should give an error message........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test AsianPaints functionality" name="To validate that user is able to Download report and Subscribe for latest design inspiration - Example #1.1" time="15.284">
+<system-out><![CDATA[
+Given User is on homepage of Asian Paints and hover on Inspiration..........passed
+When User is click on Colour Trends.........................................passed
+And Click on Forecast report................................................passed
+And User is able to click on Download report................................passed
+And User is able to enter vaidehishirbhate6@gmail.com.......................passed
+And Click on Subscribe for latest design inspiration........................passed
+Then It should download the report and user receives subscription message...passed
+]]></system-out>
+</testcase>
+<testcase classname="To test AsianPaints functionality" name="To validate Register a complaint functionality" time="18.359">
+<system-out><![CDATA[
+Given User is on homepage of Asian Paints and hover on Inspiration..........passed
+When User click on Guides option............................................passed
+And Click on Kitchen from Our Division Section..............................passed
+And Click on Register a complaint...........................................passed
+And User Register complaint with their Name, Email, Mobile and City.........passed
+And Select Nature of complaint..............................................passed
+And User enter their reason for complaint...................................passed
+And Click on Submit button..................................................passed
+Then It should give Thank you message.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test AsianPaints functionality" name="To validate the Like icon is clickable" time="16.411">
+<failure type="java.lang.AssertionError" message="expected [Happy Customers - Mr and Mrs Deo] but found []">
+<![CDATA[java.lang.AssertionError: expected [Happy Customers - Mr and Mrs Deo] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at Step_Definition.InspirationSteps.user_is_able_to_click_on_like_icon(InspirationSteps.java:304)
+	at ✽.User is able to click on like icon(file:///C:/Users/VGIRISHS/Desktop/Sprint2/Inspiration/src/test/resource/Features/AsianPaints.feature:87)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on homepage of Asian Paints and hover on Inspiration..........passed
+When User click on Inspiration..............................................passed
+And User select testimonials................................................passed
+And Click on View more Videos button........................................passed
+And User Click on Videos and LIKE the icon..................................passed
+Then User is able to click on like icon.....................................failed
+]]></system-out>
+</testcase>
+</testsuite>
